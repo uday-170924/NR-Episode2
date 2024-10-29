@@ -1,0 +1,10 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "react",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

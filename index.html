@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Episode-2</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>Not rendered</h1>
+    </div>
+
+    <!-- here,  downside i created the h1 element using javascript -->
+    <!-- <script>
+        const heading=document.createElement("h1");
+        heading.innerHTML="Not rendered written using js";
+
+        const root=document.getElementById("root");
+
+        root.appendChild(heading);        
+    </script> -->
+
+    <!-- let's us see,now create the h1 element using  react using cdn links -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="./App.js"></script>
+    <!-- like this,we are creating react element using react(using cdn links) -->
+    <!-- <script>
+        const reactheadingElement=React.createElement("h1",{id:"heading"},"nammasthe react from react")
+        const root=ReactDOM.createRoot(document.getElementById("root"));
+        root.render(reactheadingElement)
+    </script> -->
+
+    <!-- like this,we are creating nested elemnts using react -->
+    <!-- <script>
+        const reactdivElement=React.createElement("div",{id:"bg-container"},React.createElement("h1",{id:"heading"},"This is h1 heading"));
+        const root=ReactDOM.createRoot(document.getElementById("root"));
+        root.render(reactdivElement)
+    </script> -->
+
+    <!-- like this,we are creating nested elements using react & h1,h2 elements is in div container -->
+    <!-- <script>
+      const reactdivElement = React.createElement(
+        "div",
+        { id: "bg-container" },
+        [
+          React.createElement("h1", { id: "heading" }, "This is h1 heading"),
+          React.createElement("h2", { id: "heading" }, "This is h2 heading"),
+        ]
+      );
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(reactdivElement);
+    </script> -->
+
+    <!-- here,we are going to create div and inside this another div and inside this div,we are creating h1,h2 elements using react.createElement -->
+    <!-- <script>
+      const reactdivElement = React.createElement(
+        "div",
+        { id: "bg-container" },
+        React.createElement("div", { id: "inner-container" }, [
+          React.createElement("h1", { id: "heading" }, "This is h1 heading"),
+          React.createElement("h2", { id: "heading" }, "This is h2 heading"),
+        ])
+      );
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(reactdivElement);
+    </script> -->
+
+    <!-- order is also important that menas first we paste the cdn links and downside cdn links only,we have start to write react code -->
+  </body>
+</html>
