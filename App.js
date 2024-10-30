@@ -4,7 +4,8 @@
 // const root = document.getElementById("root");
 
 // root.appendChild(heading);   
-
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 
 const reactdivElement = React.createElement(
@@ -13,6 +14,7 @@ const reactdivElement = React.createElement(
     React.createElement("div", { id: "inner-container" }, [
         React.createElement("h1", { id: "heading1" }, "This is h1 heading"),
         React.createElement("h2", { id: "heading2" }, "This is h2 heading"),
+        React.createElement("h3", { id: "heading2" }, "This is h3 heading")
     ])
 );
 
@@ -28,4 +30,5 @@ root.render(reactdivElement);
 // and also now we got dist and parcel-cache in our project
 //features of parcel
 //while pushing to git,create gitignore folder and add these dist,parcel-cache and node modules.dont push regenerate files to github repository
-//for production build,type npx parcel build index.html
+//for production build,type npx parcel build index.html]
+//for execute our project,run npm parcel index.html in our terminal.because we didnt put "start":parcel index.html in scripts in package.json file.
