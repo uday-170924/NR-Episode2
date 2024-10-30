@@ -30,5 +30,6 @@ root.render(reactdivElement);
 // and also now we got dist and parcel-cache in our project
 //features of parcel
 //while pushing to git,create gitignore folder and add these dist,parcel-cache and node modules.dont push regenerate files to github repository
+//here only i removed cdn links and inject react from npm ...so npm install react and npm install react-dom in termianal to  get react into our project
 //for production build,type npx parcel build index.html]
 //for execute our project,run npm parcel index.html in our terminal.because we didnt put "start":parcel index.html in scripts in package.json file.
